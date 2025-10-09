@@ -1,8 +1,12 @@
-var http = require("http");
+const express = require('express');
 
-http.createServer(function (req, res) {
-    res.write("Hello Web!"); 
-    res.end();               
-}).listen(8080);        
+const app = express();
 
-console.log("Serverul rulează la http://localhost:8080/");
+app.use(express.static(__dirname + '/public'));
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.listen(8080);
+
