@@ -12,4 +12,5 @@ const people = [
     { name: 'Charlie', age: 35 }    
 ]
 
+
 console.log(sortByKey(people, 'age'));
