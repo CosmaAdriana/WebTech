@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>People App</title>
+</head>
+<body>
+
+  <div>
+    <form>
+      <input id="inputName" type="text" placeholder="Name">
+      <br><br>
+      <input id="inputAge" type="number" placeholder="Age">
+      <br><br>
+      <input value="submit" onclick="sendData()" type="button">
+      <br><br>
+    </form>
+  </div>
+
+  <div id="tableData"></div>
+
+  <hr>
+  <div>
+    <form id="findForm">
+      <input id="findId" type="number" placeholder="Enter ID">
+      <input value="Find by ID" onclick="findById()" type="button">
+    </form>
+    <br>
+    <pre id="findResult"></pre>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

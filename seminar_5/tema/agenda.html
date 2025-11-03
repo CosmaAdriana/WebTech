@@ -1,0 +1,59 @@
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda simpla</title>
+    <script>
+        window.onload = () => {
+            var form = document.getElementById("form");
+
+            form.onsubmit = (e) => {
+                e.preventDefault();
+
+                var nume = document.getElementById("nume").value;
+                var telefon = document.getElementById("telefon").value;
+                var tabel = document.getElementById("tabel");
+
+                // Creează un nou rând
+                var rand = document.createElement("tr");
+
+                // Creează celule pentru nume și telefon
+                var celulaNume = document.createElement("td");
+                celulaNume.textContent = nume;
+
+                var celulaTelefon = document.createElement("td");
+                celulaTelefon.textContent = telefon;
+
+                // Adaugă celulele în rând
+                rand.appendChild(celulaNume);
+                rand.appendChild(celulaTelefon);
+
+                // Adaugă rândul în tabel
+                tabel.appendChild(rand);
+
+                // Golește câmpurile
+                document.getElementById("nume").value = "";
+                document.getElementById("telefon").value = "";
+            };
+        };
+    </script>
+</head>
+<body>
+    <h1>Agenda</h1>
+
+    <h2>Adauga contact</h2>
+    <form id="form">
+        <input type="text" id="nume" placeholder="Nume" />
+        <input type="text" id="telefon" placeholder="Telefon" />
+        <button type="submit">Adauga</button>
+    </form>
+
+    <h2>Contacte</h2>
+    <table>
+        <tr>
+            <th>Nume</th>
+            <th>Telefon</th>
+        </tr>
+        <tbody id="tabel"></tbody>
+    </table>
+</body>
+</html>

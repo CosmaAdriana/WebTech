@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            window.onload = () =>{
+                const button = document.getElementById("myBtn");
+                const myEvent  = new Event ("myEvt");
+
+                const clickHandler = () => {
+                    document.dispatchEvent(myEvent);
+                };
+
+                const myEventHandler = () =>{
+                    console.log("Butonul a fost apasat. ");
+                }
+
+                button.onclick = clickHandler;
+                button.addEventListener('click', myEventHandler);
+            };
+        </script>
+    </head>
+    <body>
+        <button id = "myBtn">Click me!</button>
+    </body>
+</html>

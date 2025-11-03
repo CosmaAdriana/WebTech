@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            window.onload = () => {
+             const btn = document.getElementById("myBtn");
+
+             const customEvt = new Event("butonApasat");
+
+             btn.addEventListener("click", () => {
+                 document.dispatchEvent(customEvt);
+             });
+
+              document.addEventListener("butonApasat", () => {
+                alert("Butonul a fost apăsat!");
+             });
+            };
+     </script>
+  </head>
+    <body>
+  <button id="myBtn">Apasă-mă!</button>
+    </body>
+</html>
