@@ -1,0 +1,80 @@
+<html>
+<head>
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fff;
+    }
+
+    h3 {
+      margin-left: 15px;
+    }
+    .container {
+      border: 1px solid #f1f1f1;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+      width: 400px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h3>Contact Form</h3>
+    <form action="javascript:">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="romania">Romania</option>
+        <option value="hungary" selected>Hungary</option>
+        <option value="france">France</option>
+        <option value="germany">Germany</option>
+      </select>
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+</body>
+</html>

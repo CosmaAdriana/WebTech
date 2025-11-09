@@ -1,0 +1,42 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, Arial; }
+
+.container {
+  width: 330px;          
+  margin: 0 auto;       
+  text-align: center;
+}
+
+h1 { margin: 20px 0; }
+
+
+.row::after {            
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.square {
+  width: 110px;           
+  height: 110px;
+  float: left;
+  background: #f7f8f9;
+}
+
+.top.left,
+.top.middle,
+.middle.left,
+.middle.middle,
+.bottom.left,
+.bottom.middle {         
+  border-right: 1px solid #cfd3d7;
+}
+
+.top.left,
+.top.middle,
+.top.right,
+.middle.left,
+.middle.middle,
+.middle.right {          
+  border-bottom: 1px solid #cfd3d7;
+}
