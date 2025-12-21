@@ -1,0 +1,23 @@
+.power-user {
+  background-color: lightcoral;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #ff6b6b;
+}
+
+.power-user .username {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.power-user .fullName {
+  margin-bottom: 5px;
+}
+
+.power-user .user-type {
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+}
